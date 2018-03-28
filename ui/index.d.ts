@@ -207,11 +207,12 @@ export interface TelemetryProperties {
      * Defaults to `false`
      * This is used to more accurately track usage, since activation events generally shouldn't 'count' as usage
      */
-    isActivationEvent: 'true' | 'false';
+    isActivationEvent?: 'true' | 'false';
     result: 'Succeeded' | 'Failed' | 'Canceled';
-    error: string;
-    errorMessage: string;
-    [key: string]: string;
+    error?: string;
+    errorMessage?: string;
+    cancelStep?: string;
+    [key: string]: string | undefined;
 }
 
 export interface TelemetryMeasurements {
