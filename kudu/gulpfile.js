@@ -9,6 +9,7 @@ const path = require('path');
 const fse = require('fs-extra');
 
 gulp.task('autorest', async () => {
+    await autorest.initialize("./node_modules/@microsoft.azure/autorest-core");
     const autorestInstance = await autorest.create(undefined);
     autorestInstance.AddConfiguration({
         "nodejs": {
