@@ -4176,7 +4176,7 @@
                         "name": "request",
                         "in": "query",
                         "required": true,
-                        "type": "object"
+                        "type": "string"
                     }
                 ],
                 "responses": {
@@ -4205,7 +4205,7 @@
                         "name": "request",
                         "in": "query",
                         "required": true,
-                        "type": "object"
+                        "type": "string"
                     }
                 ],
                 "responses": {
@@ -4347,11 +4347,9 @@
                 "parameters": [
                     {
                         "name": "file",
-                        "in": "body",
+                        "in": "formData",
                         "required": true,
-                        "schema": {
-                            "type": "file"
-                        }
+                        "type": "file"
                     },
                     {
                         "name": "path",
@@ -4467,11 +4465,9 @@
                 "parameters": [
                     {
                         "name": "file",
-                        "in": "body",
+                        "in": "formData",
                         "required": true,
-                        "schema": {
-                            "type": "file"
-                        }
+                        "type": "file"
                     },
                     {
                         "name": "path",
@@ -5532,11 +5528,9 @@
                 "parameters": [
                     {
                         "name": "file",
-                        "in": "body",
+                        "in": "formData",
                         "required": true,
-                        "schema": {
-                            "type": "file"
-                        }
+                        "type": "file"
                     },
                     {
                         "name": "author",
@@ -6266,11 +6260,9 @@
                 "parameters": [
                     {
                         "name": "file",
-                        "in": "body",
+                        "in": "formData",
                         "required": true,
-                        "schema": {
-                            "type": "file"
-                        }
+                        "type": "file"
                     },
                     {
                         "name": "path",
@@ -6386,11 +6378,9 @@
                 "parameters": [
                     {
                         "name": "file",
-                        "in": "body",
+                        "in": "formData",
                         "required": true,
-                        "schema": {
-                            "type": "file"
-                        }
+                        "type": "file"
                     },
                     {
                         "name": "path",
@@ -6804,11 +6794,9 @@
                 "parameters": [
                     {
                         "name": "file",
-                        "in": "body",
+                        "in": "formData",
                         "required": true,
-                        "schema": {
-                            "type": "file"
-                        }
+                        "type": "file"
                     },
                     {
                         "name": "path",
@@ -6891,11 +6879,9 @@
                 "parameters": [
                     {
                         "name": "file",
-                        "in": "body",
+                        "in": "formData",
                         "required": true,
-                        "schema": {
-                            "type": "file"
-                        }
+                        "type": "file"
                     },
                     {
                         "name": "path",
