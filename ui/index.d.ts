@@ -156,7 +156,9 @@ export interface IAzureParentTreeItem extends IAzureTreeItem, IChildProvider {
     pickTreeItem?(expectedContextValue: string): IAzureTreeItem | undefined;
 }
 
-export declare class UserCancelledError extends Error { }
+export declare class UserCancelledError extends Error {
+    public telemetryProperties?: TelemetryProperties;
+}
 
 export declare abstract class BaseEditor<ContextT> implements Disposable {
     /**
@@ -256,6 +258,7 @@ export interface IParsedError {
     errorType: string;
     message: string;
     isUserCancelledError: boolean;
+    telemetryProperties: Partial<TelemetryProperties>;
 }
 
 /**
